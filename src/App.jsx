@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import Flower from './assets/flower.png'
-
 function App() {
   const [showBouquet, setShowBouquet] = useState(false);
 
@@ -22,7 +21,7 @@ function App() {
     createConfetti();
     setTimeout(() => {
       alert("Ты лучшая!");
-    }, 3000);
+    }, 4000);
   };
 
   return (
@@ -42,12 +41,14 @@ function App() {
       </button>
       {showBouquet && (
         <>
-          <img
-            src={Flower}
-            alt="Bouquet"
-            className="flowers"
-          />
-          <div className="text">Ты лучшая! Это для тебя!</div>
+          <div className="flower-container">
+            <img
+              src="./vecteezy_ai-generated-a-bouquet-of-crimson-roses_41493806.png"
+              alt="Bouquet"
+              className="flowers"
+            />
+            <div className="animated-text">Ты лучшая! Это для тебя!</div>
+          </div>
         </>
       )}
     </div>
