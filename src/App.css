@@ -104,8 +104,8 @@ h1 {
   }
 
   100% {
-    transform: translateY(0) scale(0.5);
-    opacity: 1;
+    transform: translateY(200) scale(2.5);
+    opacity: 100;
   }
 }
 
@@ -115,7 +115,7 @@ h1 {
   }
 
   100% {
-    transform: scale(1.2);
+    transform: scale(4.2);
   }
 }
 
