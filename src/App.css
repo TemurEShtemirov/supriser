@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  height: 100vh;
+  overflow: hidden;
+  color: #333;
+}
+
+h1 {
+  margin-top: 20vh;
+  font-size: 2.5em;
+  animation: fadeIn 2s ease-in;
+}
+
+.compliment {
+  font-size: 1.5em;
+  margin: 20px 0;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background: #ff77aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.flowers {
+  position: absolute;
+  bottom: 20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  opacity: 1;
+  transition: width 3s, opacity 3s, bottom 3s;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif, Roboto;
+  font-weight: 600;
+  font-size: 2em;
+  opacity: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: fadeInText 3s ease-in forwards;
+  animation-delay: 2.5s;
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #ff77aa;
+  animation: fall 3s linear infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(100vh);
+  }
+}
