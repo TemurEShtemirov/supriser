@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Flower from './assets/flower.png'
+import Flower from './assets/flower2.png'
 function App() {
   const [showBouquet, setShowBouquet] = useState(false);
 
