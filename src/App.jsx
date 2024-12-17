@@ -43,7 +43,7 @@ function App() {
         <>
           <div className="flower-container">
             <img
-              src="./vecteezy_ai-generated-a-bouquet-of-crimson-roses_41493806.png"
+              src={Flower}
               alt="Bouquet"
               className="flowers"
             />
